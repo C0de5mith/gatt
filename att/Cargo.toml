@@ -1,6 +1,6 @@
 [package]
 name = "att"
-version = "0.3.0-alpha.1"
+version = "0.3.1-alpha.1"
 authors = ["yskszk63 <yskszk63@gmail.com>"]
 edition = "2018"
 description = "Bluetooth Attribute Protocol Server"
@@ -15,9 +15,10 @@ futures-core = { version = "0.3", default-features = false }
 futures-sink = { version = "0.3", default-features = false }
 futures-util = { version = "0.3", default-features = false, features = ["std", "sink"] }
 futures-channel = { version = "0.3", default-features = false, features = ["std"] }
-tokio = { version = "1.14", features = ["net"] }
+# tokio updates minor versions quite quickly
+tokio = { version = "1.x", features = ["net"] }
 thiserror = "1.0"
-uuid = "0.8"
+uuid = "1.2"
 derive-new = "0.5"
 getset = "0.1"
 log = "0.4"
