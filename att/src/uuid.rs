@@ -3,7 +3,14 @@ use std::fmt;
 use std::io;
 
 pub use uuid::Uuid as Uuid128;
-pub use uuid::uuid as parse_uuid;
+
+#[macro_export]
+macro_rules! parse_uuid {
+    ($x:expr) => {
+        use uuid::uuid as old_parse;
+        old_parse!(x);
+    } 
+}
 
 use crate::packet::pack::{Error as PackError, Pack, Result as PackResult, Unpack};
 

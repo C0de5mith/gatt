@@ -84,4 +84,6 @@ pub mod packet;
 pub mod server;
 mod size;
 mod sock;
+
+#[macro_use]
 pub mod uuid;

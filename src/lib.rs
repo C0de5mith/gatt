@@ -129,6 +129,7 @@
 //! dual licensed as above, without any additional terms or conditions.!
 pub use crate::registration::{CharacteristicProperties, Registration};
 pub use crate::server::Server;
+
 pub use att::{Uuid, parse_uuid};
 
 mod attribute;
