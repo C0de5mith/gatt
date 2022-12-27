@@ -1,6 +1,6 @@
 [package]
 name = "gatt"
-version = "0.3.0-alpha.1"
+version = "0.3.0-alpha.2"
 authors = ["yskszk63 <yskszk63@gmail.com>"]
 edition = "2018"
 description = "Bluetooth Generic Attribute Protocol Server"
@@ -11,16 +11,16 @@ readme = "README.md"
 resolver = "2"
 
 [dependencies]
-att = { path = "att", version = "0.3.1-alpha.1"}
-bitflags = "1.3.2"
+att = { path = "att", version = "0.3.0-alpha.2"}
+bitflags = "1.3"
 thiserror = "1.0"
 futures-util = "0.3"
 futures-channel = "0.3"
-tokio = "1.23"
+tokio = "1.x"
 log = "0.4"
 
 [dev-dependencies]
-tokio = { version = "1.23", features = ["rt", "macros", "io-util"] }
+tokio = { version = "1.x", features = ["rt", "macros", "io-util"] }
 anyhow = "1.0"
 pretty_env_logger = "0.4"
 
